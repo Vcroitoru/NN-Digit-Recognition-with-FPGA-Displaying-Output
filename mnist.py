@@ -18,5 +18,5 @@ cnn.add(tf.keras.layers.Dense(10,activation='softmax'))
 cnn.compile(optimizer=tf.keras.optimizers.legacy.Adam(),loss='categorical_crossentropy',metrics=['accuracy'])
 history = cnn.fit(X_train, y_train,epochs=25,validation_split=0.2)
 
-cnn.save("digit_recognition.h5")
+cnn.save("digits.h5")
 
