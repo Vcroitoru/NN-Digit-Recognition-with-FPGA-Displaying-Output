@@ -31,6 +31,9 @@ Camera Input image for digit recognition to DE1_SOC Fpga which displays outputs 
   * On Reset ON, 0 for all
   * On Reset Off, shift HEX3 value to HEX5 and store it there
   * LEDs to display binary 4-bit input on FPGA
+* NN7SegDisplay-TB
+  * Testbench for testing and simulating correct output onto corresponding 7Seg from simulated input 4-bit
+  * Since the code was updated quite a bit since the TB was created, there will need to be changes to the file so it can work
  
     
 ## To run program
