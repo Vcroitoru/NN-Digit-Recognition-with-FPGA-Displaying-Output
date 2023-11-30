@@ -11,7 +11,12 @@ Camera Input image for digit recognition to DE1_SOC Fpga which displays outputs 
 <img src="NN Block Diagram.svg"
      alt="System Diagram"/>
 
-## Brief Description     
+## Brief Description
+*Neural Net
+  * Opens up Camera to receive input
+  * User chooses frame to take photo of and ROI in said photo
+  * Script makes prediction
+  * Predicition is sent via Serial to Arduino
 * SerialCommforFPGA.ino
   * Establishes GPIO Pins (Any 4 work) (Ground between Arduino and FPGA is needed)
   * Opens up serial port and continuously loops
@@ -35,6 +40,7 @@ Camera Input image for digit recognition to DE1_SOC Fpga which displays outputs 
   * Starts up camera through OpenCV and then you can display a digit in frame
   * Next press "Q" on keyboard to select an ROI that will be saved
   * Image is sent through keras.model.predict() to get a prediction of what digit was presented to Arduino
+  * Adjust COM port and Baud rate as necessary
 * SerialCommforFPGA.ino
   * Adjust COM port and Baud rate
   * Upload to Arduino
